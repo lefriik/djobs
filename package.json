@@ -1,0 +1,44 @@
+{
+  "name": "2djobs",
+  "version": "1.0.0",
+  "description": "Empleos Dj con NodeJS, Handlebars Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index",
+    "desarrollo": "concurrently \"npm run dev\" \"npm run watch\"",
+    "start" : "node ./index.js",
+    "watch": "webpack -w --mode development"
+  },
+  "author": "Emerio",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "bcrypt": "^5.0.1",
+    "concurrently": "^7.0.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^14.3.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^6.0.2",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.1",
+    "mongoose": "^6.1.8",
+    "multer": "^1.4.4",
+    "nodemailer": "^5.1.1",
+    "nodemailer-express-handlebars": "^3.0.0",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "shortid": "^2.2.16",
+    "slug": "^5.2.0",
+    "sweetalert2": "^11.3.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "nodemon": "^2.0.15",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
